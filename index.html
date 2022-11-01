@@ -2,9 +2,29 @@
 <html>
 
 <body>
+<style>
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 9s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+</style>
 <div>
 <center>
-  <h1 style="font-size:20em;">✨<a href="https://github.com/solarmerps">uwu</a>🔌🐾</h1>
+  <h1 class="rainbow_text_animated" style="font-size:20em;">✨<a href="https://github.com/solarmerps">uwu</a>🔌🐾</h1>
 </div>
 <footer><a rel="me" href="https://tech.lgbt/@solarmerps">scream into my ass</a></footer></center>
 </body>
